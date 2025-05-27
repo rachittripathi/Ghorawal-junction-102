@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en">
+DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -152,91 +152,4 @@
     }
     button {
       margin-left: 10px;
-    }
-  </style>
-</head>
-<body>
-
-<header>
-  <div style="display: flex; align-items: center; gap: 10px;">
-    <img src="logo.png" alt="Logo" style="height: 40px;">
-    <strong style="font-size: 1.4em;">Ghorawal Junction</strong>
-  </div>
-  <nav>
-    <a href="#menu">Menu</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<h1>Welcome to Ghorawal Junction</h1>
-
-<section id="menu">
-  <h2>Shakes</h2>
-  <div class="item">Chocolate Shake – ₹30 <button onclick="addToCart('Chocolate Shake', 30)">Add to Cart</button></div>
-  <div class="item">Vanilla Shake – ₹40 <button onclick="addToCart('Vanilla Shake', 40)">Add to Cart</button></div>
-  <div class="item">Butterscotch Shake – ₹40 <button onclick="addToCart('Butterscotch Shake', 40)">Add to Cart</button></div>
-  <div class="item">Kit Kat Oreo Shake – ₹50 <button onclick="addToCart('Kit Kat Oreo Shake', 50)">Add to Cart</button></div>
-  <div class="item">Cold Coffee – ₹30 <button onclick="addToCart('Cold Coffee', 30)">Add to Cart</button></div>
-  <div class="item">Cold Coffee with Ice Cream – ₹40 <button onclick="addToCart('Cold Coffee with Ice Cream', 40)">Add to Cart</button></div>
-
-  <h2>Sandwiches</h2>
-  <div class="item">Classic Veg Sandwich – ₹30 <button onclick="addToCart('Classic Veg Sandwich', 30)">Add to Cart</button></div>
-  <div class="item">Cheese Sandwich – ₹35 <button onclick="addToCart('Cheese Sandwich', 35)">Add to Cart</button></div>
-  <div class="item">Veg and Corn Sandwich – ₹40 <button onclick="addToCart('Veg and Corn Sandwich', 40)">Add to Cart</button></div>
-  <div class="item">Potato Patty Sandwich – ₹35 <button onclick="addToCart('Potato Patty Sandwich', 35)">Add to Cart</button></div>
-  <div class="item">Paneer Sandwich – ₹40 <button onclick="addToCart('Paneer Sandwich', 40)">Add to Cart</button></div>
-  <div class="item">Paneer & Cheese Sandwich – ₹45 <button onclick="addToCart('Paneer & Cheese Sandwich', 45)">Add to Cart</button></div>
-
-  <h2>Burgers</h2>
-  <div class="item">Veg Classic Burger – ₹30 <button onclick="addToCart('Veg Classic Burger', 30)">Add to Cart</button></div>
-  <div class="item">Cheese Burger – ₹35 <button onclick="addToCart('Cheese Burger', 35)">Add to Cart</button></div>
-  <div class="item">Paneer Burger – ₹40 <button onclick="addToCart('Paneer Burger', 40)">Add to Cart</button></div>
-  <div class="item">Potato Patty Burger – ₹35 <button onclick="addToCart('Potato Patty Burger', 35)">Add to Cart</button></div>
-  <div class="item">Pizza Burger – ₹40 <button onclick="addToCart('Pizza Burger', 40)">Add to Cart</button></div>
-  <div class="item">Veg and Cheese Loaded Burger – ₹45 <button onclick="addToCart('Veg and Cheese Loaded Burger', 45)">Add to Cart</button></div>
-  <div class="item">Paneer and Cheese Loaded Burger – ₹50 <button onclick="addToCart('Paneer and Cheese Loaded Burger', 50)">Add to Cart</button></div>
-</section>
-
-<section class="cart">
-  <h2>Your Cart</h2>
-  <ul id="cart-items"></ul>
-  <p><strong>Total: ₹<span id="total">0</span></strong></p>
-</section>
-
-<footer id="contact">
-  <div>
-    <p><strong>Address:</strong><br>
-    Ward Number 6, Kotwali Road,<br>
-    Near Pratibha Hospital,<br>
-    Ghorawal, Sonbhadra, UP 231210</p>
-    <p><strong>Contact:</strong><br>
-    <a href="tel:7523804312">7523804312</a><br>
-    <a href="tel:8840067399">8840067399</a><br>
-    <a href="tel:9554712409">9554712409</a></p>
-  </div>
-</footer>
-
-<script>
-  let cart = [];
-  function addToCart(item, price) {
-    cart.push({ item, price });
-    updateCart();
-  }
-
-  function updateCart() {
-    const cartList = document.getElementById("cart-items");
-    const totalDisplay = document.getElementById("total");
-    cartList.innerHTML = "";
-    let total = 0;
-    cart.forEach(entry => {
-      const li = document.createElement("li");
-      li.textContent = `${entry.item} – ₹${entry.price}`;
-      cartList.appendChild(li);
-      total += entry.price;
-    });
-    totalDisplay.textContent = total;
-  }
-</script>
-
-</body>
-</html>
+    >
